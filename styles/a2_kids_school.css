@@ -28,6 +28,7 @@ header, main{
 /* ===== nav related styles ===== */
 nav{
   justify-content: space-between;
+  align-items: center;
 }
 .brand_name{
   font-size: 2rem;
@@ -49,7 +50,7 @@ nav{
 .nav_items ul{
   align-items: center;
 }
-.btn_logo{
+.btn_contact{
   font-family: "Quicksand", serif;
   font-size: 1.25rem;
   font-weight: 600;
@@ -73,7 +74,17 @@ nav{
 .admission{
   color: #5D58EF;
 }
-
+#click{
+  display: none;
+}
+.menu_bar i{
+  font-size: 2.8rem;
+  color: #111111;
+  display: none;
+}
+.underline{
+  display: none;
+}
 /* ===== banner related styles ===== */
 .banner{
   align-items: center;
@@ -96,3 +107,34 @@ nav{
 .banner_description{
   font-size: 1.25rem;
 }
+
+
+
+@media screen and (max-width:576px) {
+  /* ===== header related responsive ===== */
+  .brand_name{
+    display: none;
+  }
+  .menu_bar i{
+    display: block;
+    cursor: pointer;
+  }
+  .underline{
+    display: block;
+    border: 1px solid #FEA301;
+  }
+  .nav_items{
+    display: none;
+  }
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .banner_content{
+      text-align: center;
+      max-width: 100%;
+    }
+    .banner img{
+      max-width: 100%;
+    }
+  
+  }
