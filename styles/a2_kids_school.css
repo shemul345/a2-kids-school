@@ -14,8 +14,21 @@ header, main{
 .display_flex{
   display: flex;
 }
+.btn_primary{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 10px 47px;
+  background-color: #111111;
+  border: none;
+  border-radius: 12px;
+}
 
 /* ===== nav related styles ===== */
+nav{
+  justify-content: space-between;
+}
 .brand_name{
   font-size: 2rem;
   font-weight: 700;
@@ -23,4 +36,63 @@ header, main{
 .nav_logo{
   align-items: center;
 }
+.nav_items ul li{
+  list-style: none;
+  margin-right: 32px;
+}
+.nav_items ul li a{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav_items ul{
+  align-items: center;
+}
+.btn_logo{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 10px 60px;
+  background-color: #FEA301;
+  color: #ffffff;
+  border-radius: 12px;
+  border: none;
+  margin-left: 154px;
+}
+.nav_items ul li .home{
+  color: #FEA301;
+  font-weight: 900;
+}
+.about{
+  color: #01ACFD;
+}
+.facilities{
+  color: #05D4DF;
+}
+.admission{
+  color: #5D58EF;
+}
 
+/* ===== banner related styles ===== */
+.banner{
+  align-items: center;
+  justify-content: space-between;
+}
+.banner_content{
+  max-width: 640px;
+}
+.banner_title{
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+#empowering{
+  color: #FEA301;
+}
+#towards_vision{
+  color: #01ACFD;
+}
+.banner_description{
+  font-size: 1.25rem;
+}
