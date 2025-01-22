@@ -1,11 +1,15 @@
+/* ===== quicksand font ===== */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* ===== raleway font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .quicksand{
   font-family: "Quicksand", serif;
   font-weight: 400;
   font-style: normal;
 }
-header, main{
+header{
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -13,6 +17,9 @@ header, main{
 /* ===== shared related styles ===== */
 .display_flex{
   display: flex;
+}
+.display_none{
+  display: none;
 }
 .btn_primary{
   font-family: "Quicksand", serif;
@@ -23,6 +30,13 @@ header, main{
   background-color: #111111;
   border: none;
   border-radius: 12px;
+}
+.section_title{
+  font-family: "Quicksand", serif;
+  font-size: 2.875rem;
+  color: #111111;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* ===== nav related styles ===== */
@@ -78,7 +92,7 @@ nav{
   display: none;
 }
 .menu_bar i{
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #111111;
   display: none;
 }
@@ -108,10 +122,196 @@ nav{
   font-size: 1.25rem;
 }
 
+/* ===== curriculum related styles ===== */
+.curriculum{
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+.curriculum_container{
+  max-width: 1160px;
+  margin: 0 auto;
+  gap: 28px;
+}
+.curriculum_title{
+  margin-bottom: 80px;
+}
+.curriculum_item{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 18px;
+}
+.curriculum_item1{
+  background-image: linear-gradient(#DEF5FF 0%, #ffffff 40%);
+  border: 0.1px solid #DEF5FF;
+}
+.curriculum_item2{
+  background-image: linear-gradient(#FFF4DC 0%, #ffffff 40%);
+  border: 0.1px solid #FFF4DC;
+}
+.curriculum_item3{
+  background-image: linear-gradient(#EEE1FF 0%, #ffffff 40%);
+  border: 0.1px solid #EEE1FF;
+}
+.curriculum_card{
+  padding: 52px 40px;
+}
+.card_title{
+  font-family: "Quicksand", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #202020;
+}
+.card_description{
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #808080;
+  margin-bottom: 38px;
+}
+.read_more1 a{
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #64C8FF;
+  text-decoration: none;
+}
+.read_more2 a{
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F0AA00;
+  text-decoration: none;
+}
+.read_more3 a{
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #8700FF;
+  text-decoration: none;
+}
+.next_previous{
+  max-width: 1160px;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 170px;
+}
+#previous, #next{
+  padding: 15px 30px;
+  background-color: #FEA301;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 50%;
+}
+#next:hover, #previous:hover{
+  background-color: aqua;
+  color: #111111;
+}
+
+/* ===== stories related styles ===== */
+.stories{
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  background-image: linear-gradient(#ffffff 0%, rgba(254, 163, 1, 0.1));
+}
+.stories_container{
+  gap: 18px;
+
+}
+.story_2nd_column{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 622px;
+  width: 601px;
+  gap: 19px;
+}
+.stories_container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.story_1st_column{
+  width: 540px;
+  height: 630px;
+}
+.story_1st_card_item{
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.story_2nd_card_item{
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.card_items{
+  padding: 34px 38px;
+}
+.card_image{
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.story_2nd_card{
+  height: 50%;
+}
+.story_2nd_card_btn{
+  font-family: "Raleway", serif;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 10px 19px;
+  background-color: #95B226;
+  border: none;
+  border-radius: 47px;
+  margin-left: -250px;
+  margin-top: 157px;
+}
+.card_2nd_title{
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.card_1st_btn{
+  font-family: "Raleway", serif;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 13px 19px;
+  background-color: #3CD8E8;
+  border: none;
+  border-radius: 47px;
+  margin-left: -480px;
+  margin-top: 312px;
+}
+.story_btn{
+  margin-top: 50px;
+  text-align: center;
+}
 
 
+
+
+
+
+
+
+
+
+/* ===== mobile device responsive related styles ===== */
 @media screen and (max-width:576px) {
   /* ===== header related responsive ===== */
+  header{
+    max-width: 100%;
+  }
   .brand_name{
     display: none;
   }
@@ -136,5 +336,71 @@ nav{
     .banner img{
       max-width: 100%;
     }
-  
+
+    /* ===== main related responsive ===== */
+    .curriculum_container{
+      flex-direction: column;
+      gap: 30px;
+    }
+    .next_previous{
+      margin-left: 20px;
+    }
+    .story_1st_column{
+      display: none;
+    }
+    .story_2nd_card_btn{
+      font-size: 0.8rem;
+      padding: 8px 10px;
+      margin-left: -205px;
+      margin-top: 120px;
+    }
+    .stories{
+      width: 100%;
+    }
+    
+  }
+
+  /* ===== tab, ipad device responsive related styles ===== */
+  @media screen and (min-width:576px) and (max-width:768px){
+    /* ===== header related responsive ===== */
+    .brand_name{
+      display: none;
+    }
+    nav{
+      max-width: 100%;
+      gap: 30px;
+    }
+    .btn_contact{
+      display: none;
+    }
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .banner_content{
+      text-align: center;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .banner img{
+      max-width: 100%;
+    }
+
+    /* ===== main related responsive ===== */
+    .curriculum_container{
+      flex-direction: column;
+      gap: 30px;
+    }
+    .next_previous{
+      margin-left: 20px;
+    }
+    .story_1st_column{
+      display: none;
+    }
+    .story_2nd_card_btn{
+      font-size: 0.8rem;
+      padding: 8px 10px;
+      margin-left: -175px;
+      margin-top: 100px;
+    }
+    
   }
