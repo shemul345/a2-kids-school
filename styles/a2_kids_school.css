@@ -31,6 +31,11 @@ header{
   border: none;
   border-radius: 12px;
 }
+.btn_primary:hover{
+  background-color: #05D4DF;
+  box-shadow: 5px 5px 10px rgba(17, 17, 17, .5);
+  transition: all .15s;
+}
 .section_title{
   font-family: "Quicksand", serif;
   font-size: 2.875rem;
@@ -74,6 +79,11 @@ nav{
   border-radius: 12px;
   border: none;
   margin-left: 154px;
+}
+.btn_contact:hover{
+  background-color: #05D4DF;
+  box-shadow: 5px 5px 10px rgba(17, 17, 17, .5);
+  transition: all .15s;
 }
 .nav_items ul li .home{
   color: #FEA301;
@@ -218,7 +228,7 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0;
-  background-image: linear-gradient(#ffffff 0%, rgba(254, 163, 1, 0.1));
+  background-image: linear-gradient(#ffffff 0%, rgba(254, 163, 1, .2));
 }
 .stories_container{
   gap: 18px;
@@ -296,15 +306,77 @@ nav{
   margin-top: 50px;
   text-align: center;
 }
+.message{
+  background-color: #01ACFD;
+  padding: 10px;
+}
+marquee{
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.primary_color{
+  background-color: #5D58F0;
+}
 
-
-
-
-
-
-
-
-
+/* ===== footer related styles ===== */
+.footer{
+  background-color: #111111;
+}
+.footer_container{
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 123px 228px 174px 140px;
+  justify-content: space-between;
+  gap: 100px;
+}
+.footer_identity{
+  max-width: 399px;
+}
+.footer_content img{
+  height: 81px;
+}
+.footer_brand{
+  font-family: "Quicksand", serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.footer_description{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.footer_title{
+  font-family: "Quicksand", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.about_content{
+  flex-direction: column;
+}
+.about_item ul{
+  margin-top: -20px;
+  margin-left: -35px;
+}
+.about_item ul li{
+  list-style: none;
+  margin-top: 15px;
+}
+.about_item ul li a{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+.social_icon img{
+  margin-right: 20px;
+}
 
 /* ===== mobile device responsive related styles ===== */
 @media screen and (max-width:576px) {
@@ -358,6 +430,23 @@ nav{
       width: 100%;
     }
     
+     /* ===== footer related responsive ===== */
+    .footer_container{
+      flex-direction: column;
+      padding: 50px 10px 50px 20px;
+    }
+    .footer_identity{
+      width: 100%;
+    }
+    .footer_title{
+      margin-top: -50px;
+    }
+    .about_content{
+      text-align: center;
+    }
+    .footer_media{
+      text-align: center;
+    }
   }
 
   /* ===== tab, ipad device responsive related styles ===== */
@@ -401,6 +490,25 @@ nav{
       padding: 8px 10px;
       margin-left: -175px;
       margin-top: 100px;
+    }
+
+    /* ===== footer related responsive ===== */
+    .footer_container{
+      flex-direction: column;
+      padding: 50px 10px 50px 20px;
+    }
+    .footer_identity{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .footer_title{
+      margin-top: -50px;
+    }
+    .about_content{
+      text-align: center;
+    }
+    .footer_media{
+      text-align: center;
     }
     
   }
